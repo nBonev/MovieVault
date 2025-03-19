@@ -35,6 +35,7 @@ export default function Home() {
 
         try {
             const searchResults = await searchMovies(searchQuery);
+            
             setMovies(searchResults)
             setError(null)
         } catch (err) {
